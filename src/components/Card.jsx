@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 const Card = ({ data, r }) => {
     const color = data.tag.color
     return (
-        <motion.div dragSnapToOrigin={true} dragTransition={{ bounceStiffness: 100, bounceDamping: 20 }} dragConstraints={r} drag="x" dragMomentum={true} whileDrag={{ scale: 1.05 }} className='w-52 h-64 bg-zinc-900/90 relative rounded-[30px] overflow-hidden p-5 pt-7 text-white'>
+        <motion.div dragSnapToOrigin="true" dragTransition={{ bounceStiffness: 100, bounceDamping: 20 }} dragConstraints={r} drag dragMomentum={true} whileDrag={{ scale: 1.05 }} className='w-52 h-64 bg-zinc-900/90 relative rounded-[30px] overflow-hidden m-1 p-5 pt-7 text-white'>
             <FaFileLines />
             <p className='pt-3 leading-tight text-sm text-left'>{data.desc}</p>
             <div className='w-full footer absolute bottom-0 left-0'>
